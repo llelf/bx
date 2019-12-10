@@ -1,0 +1,14 @@
+Arthur Whitney’s [[http://kparc.com/b/][B compiler]], ported to macOS
+
+current status:
+#+begin_src c
+~/H/bp› rlwrap ./bin/b
+
+ a[ii]$[x;a[-x;$[y;a[x;-y];1]];+y]
+ a[3;4]
+125
+
+ f[i]$[x;f[x-1]*x;1]
+ f[10]
+3628800
+#+end_src
