@@ -1,7 +1,7 @@
 #include"a.h"// read/write mmap/munmap printf/scanf malloc/free
 J read(),write();I open(),close(),fstat(),munmap();S mmap();V exit();ZF ms(){J a,d;asm volatile("rdtsc":"=a"(a),"=d"(d));R((d<<32)+a)*.58e-6;}
 V w2(S s){write(2,s,strlen(s));}ZS r2(S s){ZC b[256];R w2(s),b[read(0,b,256)-1]=0,b;}ZI rand(){ZJ j0=-314159;R j0=4294957665L*j0+(j0>>32);}
-ZS ma(I d,J n){ZJ p=0x700000;p+=d?0:n;R mmap(d?0:p-n,n,0x7,d?2:0x22,d?d:-1,0);}ZS mf(S s,J*n){J b[18];I d=open(s,0);Qs(0>d,s)R fstat(d,b),s=(*n=b[6])?ma(d,*n):s,close(d),s;}
+ZS ma(I d,J n){ZJ p=0x700000;p+=d?0:n;R mmap(d?0:p-n,n,0x7,d?2:0x1002,d?d:-1,0);}ZS mf(S s,J*n){J b[18];I d=open(s,0);Qs(0>d,s)R fstat(d,b),s=(*n=b[6])?ma(d,*n):s,close(d),s;}
 
 // printf scanf 
 ZC b[24];ZS ng(S s){R*--s='-',s;}ZS pu(S s,J i){J j;do*--s='0'+i-10*(j=i/10);W(i=j);R s;}ZF x(I n){F e=1;N(n,e*=10)R e;}S pi(J i){R 0>i?ng(pi(-i)):pu(b+23,i);} //P(NI==f||0>(j|k),nf)
