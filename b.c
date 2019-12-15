@@ -11,6 +11,7 @@ K cc(I o,I r){R c2(8+o,r);}K Jj(K x,I n){R c5(8+x[xn],n-3);}K cll(I c){R c2(1,c)
 K sh(I t,I r){R c2(35+j(t),r);}K cv(I x,I y){R c3(36+32,x,y);}K cm(I t,I x,I y){R c3(38+j(t),x,y);}K o2(I t,I o,I r,I x,I y){R c3(48+o+j(t),16*r+x,y);}*/
 // :+-*% ^&|<=>  x64 JJ Jj o2 cc tst RET cll psh pop acdbsbsd89..  o[m[s|d]] c3 eb+1 e8+4 e9+4 [f2/66/4*][0f] 5* 7*+1 b*+4 0f8*+4  03 23 2b 3b (6b 83) 89 8b ..
 K1(ev){x=xy,x=KS<xu?((K(*)())x)():KF==xu?kf(((F(*)())x)()):ki(((J(*)())x)());R x;}K ps(S s){K z;I a=0,A[]={0,7,6,2,1,8,9,10,11,3,12,13,14,15,5,4},B=5,RET=0xc3,
+/*    jmp-   jc   jz   ja jmp=  jnc  jnz  jna    jnc= */
 JJ[]={0xeb,0x72,0x74,0x77,0xe9,0x73,0x75,0x76, 0x0f83};I m(I a,I b,I c){R 64*a+8*(7&b)+(7&c);}K rex(I r,I x,I b,K y){R(r=7<A[r])+(x=7<A[x])+(b=7<A[b])?cj(0x40+4*r+2*x+b,y):y;}
 K h(I o,I x,I y){R j2(256>o?c1(o):c2(o>>8,o),16>y?c1(m(3,x,y)):c5(m(0,x,5),y));}K i(I o,I x,I y){R rex(16>x?x:0,0,16>y?y:0,h(o,16>x?A[x]:x-16,16>y?A[y]:y));}
 K cll(I c){R c5(0xe8,c);}K psh(I t,I x){R rex(0,0,x,c1(0x50+(7&A[x])));}K pop(I t,I x){R rex(0,0,x,c1(0x58+(7&A[x])));}
