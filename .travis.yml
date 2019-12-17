@@ -1,0 +1,8 @@
+os: osx
+language: c
+before_install: brew install gcc@8 && mkdir bin
+script: make CC=gcc-8 && ./bin/b t.b <<< \\
+matrix:
+  - osx_image: xcode11.2
+  - osx_image: xcode10.1
+
