@@ -28,7 +28,7 @@ V1(lnk){S s=x;W(s<x+xn){I n=ln(s+=4==*s/16),p=0xc5==*s?2:0x0f==*s;S r=s+n-4;
 V1(dis){w2(px(xu)),oc(':');S s=x;W(s<x+xn-2){N(ln(s),w2(px(*s++)))oc(' ');}N(2,w2(px(*s++)))nl();}K u(I u,K x){R xu=u,x;}K jmp(I n){R n<-128||n>127?c5(JJ[4],0>n?n-3:n):c2(*JJ,n);}
 K O2(I t,I f,I r,K x,K y){I i=Ay?yi:yu;R u(r,j3(Ay?c0():y,x,10>f?o2(t,f,r,xu,i):j2(cm(t,xu,i),16>r?cc(f-9,r):c1(f-9))));}K SH(I t,K y){R u(yu,j2(y,sh(t,yu)));}
 K ZR(I t,C r){R u(r,o2(t,2,r,r,r));}K MV(I t,I r,K y){R O2(t,0,r,u(r,c0()),y);}K Na(){S r=s;W(10u>*++s-'0'||'.'==*s);I f=0;N(s-r,f|='.'==r[i])R f?kf(fp(r,s-r)):ki(ip(r,s-r));}
-C N=8,D[2]={1,1},L[26],T[26];N(26,L[i]=T[i]=0)S r='['==s[1]&&(r=sc(s,']'))&&*++r?r:0;I M=0;K*k=r||':'==s[1]?a=*s,s+=2,G+a-'a':0;P('!'==*s,++s,X(k,enm(ki(ip(s,strlen(s))))))
+C N=8,D[2]={1,1},L[26],T[26];N(26,L[i]=T[i]=0)S r='['==s[1]&&(r=sc(s,']'))&&*++r?r:0;I M=0;K*k=r||':'==s[1]?a=*s,s+=2,G+a-'a':0;P('!'==*s,++s,X(k?:AB("nyi:bare!"),enm(ki(ip(s,strlen(s))))))
 I1(t){I a=xi-'a';R!Ax?xu:126<xi?KI:26u>a&&T[a]?T[a]:A(x=26u>a?G[a]:zK[2+xi-16])?Ax:xt+8;}I1(q){I i=xi-'a';R Ax?26u>i&&L[i]?L[i]:0:':'==*x?I(xy):0;}auto K d();
 K e(I r,K x){K y=d(r,x);R Ay?128==yi||32>yi&&!zK[2+yi-16]?ZR(t(x),r):MV(t(x),r,y):y;}K b(I f,K x){K y=d(16,x);R Ay?AB("b"):16==yu?y[yn-1]=JJ[y[yn-1]+f*4],y:j3(y,tst(t(x),yu),c1(JJ[f?2:6]));}
 K f(I r,K x){K y=e(r,x);R r-yu?MV(t(x),r,y):y;}K E(I r,K x){I i=xn-1;K z=e(r,Xx),y=kK(i--);r=zu,Yx=z;W(i--)Yx=e(0,xK[i+1]);R u(r,sS(0,y));}
